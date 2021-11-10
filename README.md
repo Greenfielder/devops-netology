@@ -23,3 +23,5 @@ override.tf.json
 # Будет игнорироваться .terraformrc terraform.rc
 .terraformrc
 terraform.rc
+
+New Line
