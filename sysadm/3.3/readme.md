@@ -2,7 +2,7 @@
 
 ### Вопрос 1. 
 #### Ответ:
-* execve("/bin/bash", ["/bin/bash", "-c", "cd /tmp"], 0x7ffe5be384d0 /* 24 vars */) = 0
+* chdir("/tmp")
 
 ### Вопрос 2.
 #### Ответ:
