@@ -2,7 +2,25 @@
 
 ### Вопрос 1. 
 #### Ответ:
-* Готово
+vagrant@vagrant:~$ cat /etc/systemd/system/node_exporter.service <br>
+[Unit] <br>
+Description=Prometheus Node Exporter <br>
+Wants=network-online.target <br>
+After=network-online.target <br>
+<br>
+[Service] <br>
+User=node_exporter <br>
+Group=node_exporter <br>
+Type=simple <br>
+ExecStart=/usr/local/bin/node_exporter \ <br>
+--collector.cpu \ <br>
+--collector.meminfo \ <br>
+--collector.loadavg \ <br>
+--collector.filesystem <br>
+<br>
+[Install] <br>
+WantedBy=multi-user.target <br>
+vagrant@vagrant:~$ <br>
 
 ### Вопрос 2.
 #### Ответ:
